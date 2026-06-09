@@ -8,5 +8,179 @@
       "Variables2": "Multiply `a` by 2 and return it.",
       "Variables3": "Cast one of the integers to a double before dividing, for example: `(double) a / b`."
     }
+  },
+  "002-datatypes": {
+    "slug": "datatypes",
+    "title": "Datatypes",
+    "difficulty": "easy",
+    "hints": {}
+  },
+  "003-operators": {
+    "slug": "operators",
+    "title": "Operators",
+    "difficulty": "easy",
+    "hints": {}
+  },
+  "004-type-casting": {
+    "slug": "type-casting",
+    "title": "Type Casting",
+    "difficulty": "easy",
+    "hints": {}
+  },
+  "005-strings": {
+    "slug": "strings",
+    "title": "Strings",
+    "difficulty": "easy",
+    "hints": {}
+  },
+  "006-conditionals": {
+    "slug": "conditionals",
+    "title": "Conditionals",
+    "difficulty": "easy",
+    "hints": {}
+  },
+  "007-loops": {
+    "slug": "loops",
+    "title": "Loops",
+    "difficulty": "easy",
+    "hints": {}
+  },
+  "008-arrays": {
+    "slug": "arrays",
+    "title": "Arrays",
+    "difficulty": "easy",
+    "hints": {}
+  },
+  "009-methods": {
+    "slug": "methods",
+    "title": "Methods",
+    "difficulty": "easy",
+    "hints": {}
+  },
+  "010-method-overloading": {
+    "slug": "method-overloading",
+    "title": "Method Overloading",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "011-classes": {
+    "slug": "classes",
+    "title": "Classes",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "012-objects": {
+    "slug": "objects",
+    "title": "Objects",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "013-constructors": {
+    "slug": "constructors",
+    "title": "Constructors",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "014-encapsulation": {
+    "slug": "encapsulation",
+    "title": "Encapsulation",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "015-access-modifiers": {
+    "slug": "access-modifiers",
+    "title": "Access Modifiers",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "016-static": {
+    "slug": "static",
+    "title": "Static",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "017-final": {
+    "slug": "final",
+    "title": "Final",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "018-inheritance": {
+    "slug": "inheritance",
+    "title": "Inheritance",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "019-polymorphism": {
+    "slug": "polymorphism",
+    "title": "Polymorphism",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "020-abstract-classes": {
+    "slug": "abstract-classes",
+    "title": "Abstract Classes",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "021-interfaces": {
+    "slug": "interfaces",
+    "title": "Interfaces",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "022-exceptions": {
+    "slug": "exceptions",
+    "title": "Exceptions",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "023-generics": {
+    "slug": "generics",
+    "title": "Generics",
+    "difficulty": "hard",
+    "hints": {}
+  },
+  "024-collections": {
+    "slug": "collections",
+    "title": "Collections",
+    "difficulty": "hard",
+    "hints": {}
+  },
+  "025-lambdas": {
+    "slug": "lambdas",
+    "title": "Lambdas",
+    "difficulty": "hard",
+    "hints": {}
+  },
+  "026-streams": {
+    "slug": "streams",
+    "title": "Streams",
+    "difficulty": "hard",
+    "hints": {}
+  },
+  "027-optional": {
+    "slug": "optional",
+    "title": "Optional",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "028-enums": {
+    "slug": "enums",
+    "title": "Enums",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "029-packages": {
+    "slug": "packages",
+    "title": "Packages",
+    "difficulty": "medium",
+    "hints": {}
+  },
+  "030-file-handling": {
+    "slug": "file-handling",
+    "title": "File Handling",
+    "difficulty": "hard",
+    "hints": {}
   }
 }

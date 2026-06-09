@@ -36,12 +36,20 @@ public class Main implements Runnable{
             
             Welcome to @|bold,magenta Javalings|@! Learn Java by fixing broken code.
             
-            Try running one of these commands:
+            We will automatically start @|bold,yellow watch mode|@ in a moment!
+            If you want to use manual commands, try:
               @|yellow ⚡ javalings list|@   - Show all available exercises
               @|yellow ⚡ javalings run|@    - Compile and test the current exercise
-              @|yellow ⚡ javalings watch|@  - Keep an eye out for your file changes
               @|yellow ⚡ javalings hint|@   - Get a hint if you are stuck
             """));
+            
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            // Ignore
+        }
+        
+        new WatchCommand().run();
     }
 
     public static void main(String[] args) {
