@@ -1,8 +1,10 @@
 /Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/Main.java
+/Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/cli/HintCommand.java
 /Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/cli/ListCommand.java
 /Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/cli/NextCommand.java
 /Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/cli/RunCommand.java
 /Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/cli/ShowCommand.java
+/Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/cli/WatchCommand.java
 /Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/engine/ExerciseRegistry.java
 /Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/engine/ExerciseRunner.java
 /Users/satyam/Documents/javalings/javalings/src/main/java/com/javalings/engine/ProgressManager.java

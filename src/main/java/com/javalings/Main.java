@@ -1,8 +1,10 @@
 package com.javalings;
+import com.javalings.cli.HintCommand;
 import com.javalings.cli.ListCommand;
 import com.javalings.cli.NextCommand;
 import com.javalings.cli.RunCommand;
 import com.javalings.cli.ShowCommand;
+import com.javalings.cli.WatchCommand;
 
 import picocli.CommandLine;
 
@@ -15,7 +17,9 @@ import picocli.CommandLine;
         ListCommand.class,
         ShowCommand.class,
         NextCommand.class,
-        RunCommand.class
+        RunCommand.class,
+        WatchCommand.class,
+        HintCommand.class
     }
 )
 public class Main implements Runnable{
@@ -36,6 +40,7 @@ public class Main implements Runnable{
               @|yellow ⚡ javalings list|@   - Show all available exercises
               @|yellow ⚡ javalings run|@    - Compile and test the current exercise
               @|yellow ⚡ javalings watch|@  - Keep an eye out for your file changes
+              @|yellow ⚡ javalings hint|@   - Get a hint if you are stuck
             """));
     }
 

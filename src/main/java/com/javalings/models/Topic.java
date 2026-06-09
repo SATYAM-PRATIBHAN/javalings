@@ -5,6 +5,7 @@ public class Topic {
     private String slug;
     private String title;
     private String difficulty;
+    private java.util.Map<String, String> hints;
 
     public Topic() {};
 
@@ -19,4 +20,7 @@ public class Topic {
 
     public String getDifficulty() { return difficulty; }
     public void setDifficulty(String difficulty) { this.difficulty = difficulty; }
+
+    public java.util.Map<String, String> getHints() { return hints; }
+    public void setHints(java.util.Map<String, String> hints) { this.hints = hints; }
 }
