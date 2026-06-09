@@ -1,6 +1,7 @@
 package com.javalings;
 import com.javalings.cli.ListCommand;
 import com.javalings.cli.NextCommand;
+import com.javalings.cli.RunCommand;
 import com.javalings.cli.ShowCommand;
 
 import picocli.CommandLine;
@@ -13,7 +14,8 @@ import picocli.CommandLine;
     subcommands = {
         ListCommand.class,
         ShowCommand.class,
-        NextCommand.class
+        NextCommand.class,
+        RunCommand.class
     }
 )
 public class Main implements Runnable{

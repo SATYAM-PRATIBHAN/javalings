@@ -1,1 +1,12 @@
+com/javalings/models/ExerciseInfo.class
+com/javalings/cli/ListCommand.class
+com/javalings/cli/RunCommand.class
+com/javalings/cli/ShowCommand.class
 com/javalings/Main.class
+com/javalings/engine/ProgressManager.class
+com/javalings/engine/TopicLoader.class
+com/javalings/engine/ExerciseRunner.class
+com/javalings/models/Progress.class
+com/javalings/cli/NextCommand.class
+com/javalings/models/Topic.class
+com/javalings/engine/ExerciseRegistry.class

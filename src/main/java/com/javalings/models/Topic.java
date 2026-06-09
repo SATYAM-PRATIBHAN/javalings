@@ -1,12 +1,12 @@
 package com.javalings.models;
 
-public class Exercise {
+public class Topic {
     private int id;
     private String slug;
     private String title;
     private String difficulty;
 
-    public Exercise() {};
+    public Topic() {};
 
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
