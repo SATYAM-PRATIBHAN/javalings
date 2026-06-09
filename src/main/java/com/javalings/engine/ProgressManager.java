@@ -2,9 +2,9 @@ package com.javalings.engine;
 
 import java.io.File;
 import java.io.IOException;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.javalings.models.Progress;
+
 public class ProgressManager {
     private static final String FILE = ".progress.json";
 

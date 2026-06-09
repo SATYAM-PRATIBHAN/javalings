@@ -9,7 +9,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.junit.platform.engine.discovery.DiscoverySelectors;
 import org.junit.platform.launcher.Launcher;
 import org.junit.platform.launcher.LauncherDiscoveryRequest;
@@ -58,8 +59,8 @@ public class ExerciseRunner {
             } else {
                 // Fallback for non-URLClassLoaders, dynamically resolve known JUnit jars
                 try {
-                    cp.append(File.pathSeparator).append(new File(org.junit.jupiter.api.Test.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getAbsolutePath());
-                    cp.append(File.pathSeparator).append(new File(org.junit.jupiter.api.Assertions.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getAbsolutePath());
+                    cp.append(File.pathSeparator).append(new File(Test.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getAbsolutePath());
+                    cp.append(File.pathSeparator).append(new File(Assertions.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getAbsolutePath());
                 } catch (Exception e) {}
             }
             options.add("-cp");

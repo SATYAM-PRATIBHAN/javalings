@@ -7,6 +7,8 @@ import com.javalings.models.ExerciseInfo;
 import com.javalings.models.Progress;
 import picocli.CommandLine;
 import java.nio.file.*;
+import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 @CommandLine.Command(
     name = "watch",
@@ -20,11 +22,11 @@ public class WatchCommand implements Runnable {
         ExerciseRegistry registry = new ExerciseRegistry();
         ExerciseRunner runner = new ExerciseRunner();
 
-        java.util.concurrent.atomic.AtomicBoolean forceCheck = new java.util.concurrent.atomic.AtomicBoolean(false);
+        AtomicBoolean forceCheck = new AtomicBoolean(false);
 
         Thread inputThread = new Thread(() -> {
             @SuppressWarnings("resource")
-            java.util.Scanner scanner = new java.util.Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             while (scanner.hasNextLine()) {
                 String input = scanner.nextLine().trim();
                 if (input.equalsIgnoreCase("h") || input.equalsIgnoreCase("hint")) {
@@ -39,7 +41,7 @@ public class WatchCommand implements Runnable {
                     printFooter(currentInfo, manager, registry);
                 } else if (input.equalsIgnoreCase("l") || input.equalsIgnoreCase("list")) {
                     System.out.println();
-                    new com.javalings.cli.ListCommand().run();
+                    new ListCommand().run();
                     Progress progress = manager.load();
                     ExerciseInfo currentInfo = registry.getExercise(progress.getCurrentExercise());
                     printFooter(currentInfo, manager, registry);

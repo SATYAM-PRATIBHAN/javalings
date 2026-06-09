@@ -1,5 +1,10 @@
 package com.javalings.cli;
 
+import com.javalings.engine.ExerciseRegistry;
+import com.javalings.engine.ProgressManager;
+import com.javalings.models.ExerciseInfo;
+import com.javalings.models.Progress;
+
 import picocli.CommandLine;
 
 @CommandLine.Command(
@@ -12,12 +17,12 @@ public class ListCommand implements Runnable{
     public void run() {
         System.out.println(CommandLine.Help.Ansi.AUTO.string("@|bold,cyan Available Exercises:|@\n"));
         
-        com.javalings.engine.ProgressManager manager = new com.javalings.engine.ProgressManager();
-        com.javalings.models.Progress progress = manager.load();
+        ProgressManager manager = new ProgressManager();
+        Progress progress = manager.load();
         int currentId = progress.getCurrentExercise();
 
-        com.javalings.engine.ExerciseRegistry registry = new com.javalings.engine.ExerciseRegistry();
-        for (com.javalings.models.ExerciseInfo info : registry.getAllExercises()) {
+        ExerciseRegistry registry = new ExerciseRegistry();
+        for (ExerciseInfo info : registry.getAllExercises()) {
             String checkbox = info.getGlobalId() < currentId ? "@|green [x]|@" : 
                               (info.getGlobalId() == currentId ? "@|yellow [/]|@" : "[ ]");
             

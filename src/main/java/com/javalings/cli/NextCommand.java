@@ -1,5 +1,11 @@
 package com.javalings.cli;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import com.javalings.engine.ExerciseRegistry;
+import com.javalings.engine.ExerciseRunner;
+import com.javalings.engine.ProgressManager;
+
 import picocli.CommandLine;
 
 @CommandLine.Command(
@@ -9,29 +15,29 @@ import picocli.CommandLine;
 public class NextCommand implements Runnable{
     @Override
     public void run() {
-        com.javalings.engine.ProgressManager manager = new com.javalings.engine.ProgressManager();
+        ProgressManager manager = new ProgressManager();
         com.javalings.models.Progress progress = manager.load();
         
-        com.javalings.engine.ExerciseRegistry registry = new com.javalings.engine.ExerciseRegistry();
+        ExerciseRegistry registry = new ExerciseRegistry();
         com.javalings.models.ExerciseInfo info = registry.getExercise(progress.getCurrentExercise());
 
         if (info == null) {
-            System.out.println(picocli.CommandLine.Help.Ansi.AUTO.string(" @|bold,green 🎉 You have completed all Javalings exercises! |@"));
+            System.out.println(CommandLine.Help.Ansi.AUTO.string(" @|bold,green 🎉 You have completed all Javalings exercises! |@"));
             return;
         }
 
-        com.javalings.engine.ExerciseRunner runner = new com.javalings.engine.ExerciseRunner();
+        ExerciseRunner runner = new ExerciseRunner();
         boolean success = runner.runCurrentExercise(info);
 
         if (!success) {
-            System.out.println(picocli.CommandLine.Help.Ansi.AUTO.string("\n@|bold,red ❌ Cannot advance. Please fix the exercise first!|@"));
+            System.out.println(CommandLine.Help.Ansi.AUTO.string("\n@|bold,red ❌ Cannot advance. Please fix the exercise first!|@"));
             return;
         }
 
         try {
-            String content = java.nio.file.Files.readString(java.nio.file.Path.of(info.getExercisePath()));
+            String content = Files.readString(Path.of(info.getExercisePath()));
             if (content.contains("// I AM NOT DONE")) {
-                System.out.println(picocli.CommandLine.Help.Ansi.AUTO.string("\n@|bold,yellow ⚠️  Tests passed! Remove `// I AM NOT DONE` from the file to advance.|@"));
+                System.out.println(CommandLine.Help.Ansi.AUTO.string("\n@|bold,yellow ⚠️  Tests passed! Remove `// I AM NOT DONE` from the file to advance.|@"));
                 return;
             }
         } catch (Exception e) {

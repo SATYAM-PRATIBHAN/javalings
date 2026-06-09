@@ -1,7 +1,10 @@
 package com.javalings.cli;
 
+import com.javalings.engine.ExerciseRegistry;
 import com.javalings.engine.ExerciseRunner;
-
+import com.javalings.engine.ProgressManager;
+import com.javalings.models.ExerciseInfo;
+import com.javalings.models.Progress;
 import picocli.CommandLine;
 
 @CommandLine.Command(
@@ -11,11 +14,11 @@ import picocli.CommandLine;
 public class RunCommand implements Runnable{
     @Override
     public void run() {
-        com.javalings.engine.ProgressManager manager = new com.javalings.engine.ProgressManager();
-        com.javalings.models.Progress progress = manager.load();
+        ProgressManager manager = new ProgressManager();
+        Progress progress = manager.load();
 
-        com.javalings.engine.ExerciseRegistry registry = new com.javalings.engine.ExerciseRegistry();
-        com.javalings.models.ExerciseInfo info = registry.getExercise(progress.getCurrentExercise());
+        ExerciseRegistry registry = new ExerciseRegistry();
+        ExerciseInfo info = registry.getExercise(progress.getCurrentExercise());
 
         if (info == null) {
             System.out.println(CommandLine.Help.Ansi.AUTO.string(" @|bold,red Could not find exercise for ID: " + progress.getCurrentExercise() + " |@"));

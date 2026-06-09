@@ -1,8 +1,8 @@
 package com.javalings.engine;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.javalings.models.Topic;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ public class TopicLoader {
             if (infoFile.exists()) {
                 topics = mapper.readValue(
                     infoFile,
-                    new com.fasterxml.jackson.core.type.TypeReference<java.util.Map<String, Topic>>() {}
+                    new TypeReference<java.util.Map<String, Topic>>() {}
                 );
             } else {
                 topics = new java.util.HashMap<>();
