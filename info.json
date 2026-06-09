@@ -13,7 +13,14 @@
     "slug": "datatypes",
     "title": "Datatypes",
     "difficulty": "easy",
-    "hints": {}
+    "hints": {
+      "Datatypes1": "In Java, local variables are not assigned a default value. You must explicitly initialize `number` before returning it.",
+      "Datatypes2": "By default, numbers in Java are 32-bit `int`s. Even if the result is assigned to a `long`, the multiplication `2000000000 * 2` happens as a 32-bit `int` first, causing an overflow! Add an `L` suffix to at least one of the numbers.",
+      "Datatypes3": "Dividing two integers always results in an integer (e.g., `5 / 2 = 2`). To get a decimal result, at least one of the numbers must be cast to a `double` (e.g., `(double) a`).",
+      "Datatypes4": "Double quotes (`\" \"`) are used for `String` objects. Single quotes (`' '`) are used for primitive `char`s.",
+      "Datatypes5": "The `var` keyword relies on the right side of the assignment to guess the data type. You must assign a String value to it on the same line it is declared.",
+      "Datatypes6": "An `Integer` object can hold `null`, but an `int` primitive cannot. When Java auto-unboxes a `null` Integer into an `int`, it throws a `NullPointerException`. Assign a real number to `wrapperScore`."
+    }
   },
   "003-operators": {
     "slug": "operators",
