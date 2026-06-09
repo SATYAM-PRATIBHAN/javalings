@@ -2,9 +2,6 @@ package com.javalings.cli;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import com.javalings.engine.TopicLoader;
-import com.javalings.models.Topic;
-
 import picocli.CommandLine;
 
 @CommandLine.Command(

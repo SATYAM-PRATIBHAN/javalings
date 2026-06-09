@@ -3,6 +3,7 @@ com/javalings/cli/RunCommand.class
 com/javalings/engine/ProgressManager.class
 com/javalings/engine/TopicLoader.class
 com/javalings/engine/ExerciseRunner.class
+com/javalings/engine/TopicLoader$1.class
 com/javalings/models/Progress.class
 com/javalings/models/Topic.class
 com/javalings/cli/ListCommand.class

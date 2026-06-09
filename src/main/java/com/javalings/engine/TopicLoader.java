@@ -9,21 +9,29 @@ import java.io.IOException;
 public class TopicLoader {
 
     private static final ObjectMapper mapper = new ObjectMapper();
+    private java.util.Map<String, Topic> topics;
 
-    public Topic load(String topicPath) {
+    public TopicLoader() {
         try {
-            File metadata = new File(topicPath + "/topic.json");
-
-            return mapper.readValue(
-                metadata,
-                Topic.class
-            );
-            
+            File infoFile = new File("info.json");
+            if (infoFile.exists()) {
+                topics = mapper.readValue(
+                    infoFile,
+                    new com.fasterxml.jackson.core.type.TypeReference<java.util.Map<String, Topic>>() {}
+                );
+            } else {
+                topics = new java.util.HashMap<>();
+            }
         } catch (IOException e) {
-            throw new RuntimeException(
-                "Failed to load topic",
-                e
-            );
+            throw new RuntimeException("Failed to load info.json", e);
         }
+    }
+
+    public Topic load(String topicDirName) {
+        Topic topic = topics.get(topicDirName);
+        if (topic == null) {
+            throw new RuntimeException("Topic not found in info.json: " + topicDirName);
+        }
+        return topic;
     }
 }

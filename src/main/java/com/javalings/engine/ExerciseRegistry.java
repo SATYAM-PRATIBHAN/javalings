@@ -27,7 +27,7 @@ public class ExerciseRegistry {
         for (File topicDir : topicDirs) {
             Topic topic;
             try {
-                topic = loader.load(topicDir.getPath());
+                topic = loader.load(topicDir.getName());
             } catch (Exception e) {
                 continue; // Skip if no topic.json
             }

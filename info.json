@@ -1,0 +1,12 @@
+{
+  "001-variables": {
+    "slug": "variables",
+    "title": "Variables",
+    "difficulty": "easy",
+    "hints": {
+      "Variables1": "Just change the return value to 25!",
+      "Variables2": "Multiply `a` by 2 and return it.",
+      "Variables3": "Cast one of the integers to a double before dividing, for example: `(double) a / b`."
+    }
+  }
+}
