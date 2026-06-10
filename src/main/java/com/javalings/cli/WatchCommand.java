@@ -45,6 +45,12 @@ public class WatchCommand implements Runnable {
                     Progress progress = manager.load();
                     ExerciseInfo currentInfo = registry.getExercise(progress.getCurrentExercise());
                     printFooter(currentInfo, manager, registry);
+                } else if (input.equalsIgnoreCase("s") || input.equalsIgnoreCase("show")) {
+                    System.out.println();
+                    new ShowCommand().run();
+                    Progress progress = manager.load();
+                    ExerciseInfo currentInfo = registry.getExercise(progress.getCurrentExercise());
+                    printFooter(currentInfo, manager, registry);
                 } else if (input.equalsIgnoreCase("q") || input.equalsIgnoreCase("quit")) {
                     System.out.println(CommandLine.Help.Ansi.AUTO.string("\n@|bold,cyan 👋 Exiting Javalings watch mode. Bye!|@"));
                     System.exit(0);
@@ -141,7 +147,7 @@ public class WatchCommand implements Runnable {
             System.out.println("Current exercise: Completed!\n");
         }
         
-        System.out.print(CommandLine.Help.Ansi.AUTO.string("@|bold h|@:hint / @|bold l|@:list / @|bold q|@:quit ? \n"));
+        System.out.print(CommandLine.Help.Ansi.AUTO.string("@|bold h|@:hint / @|bold l|@:list / @|bold s|@:show details / @|bold q|@:quit ? \n"));
     }
 
     private void clearScreen() {
