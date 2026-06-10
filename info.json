@@ -67,7 +67,11 @@
     "slug": "loops",
     "title": "Loops",
     "difficulty": "easy",
-    "hints": {}
+    "hints": {
+      "Loops1": "For sumOfDigits, use `while(number > 0)`. For Collatz, use `while(n != 1)`.",
+      "Loops2": "Use `do { ... } while(condition)`. Remember to update your variables inside the loop so it eventually terminates!",
+      "Loops3": "For the triangle, use `for(int i=1; i<=height; i++)` and an inner loop `for(int j=1; j<=i; j++)`. Remember to append `\\n` after the inner loop."
+    }
   },
   "008-arrays": {
     "slug": "arrays",
