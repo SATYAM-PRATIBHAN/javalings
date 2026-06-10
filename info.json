@@ -77,7 +77,14 @@
     "slug": "arrays",
     "title": "Arrays",
     "difficulty": "easy",
-    "hints": {}
+    "hints": {
+      "Arrays1": "To create a new array, use `new int[]{a, b}`. To update in place, use `scores[i] = scores[i] * 2`.",
+      "Arrays2": "Use a `for (int num : numbers)` loop to find max or calculate sum. Remember to divide by a double for average.",
+      "Arrays3": "The main diagonal of a square matrix means the row and column index are the same: `matrix[i][i]`.",
+      "Arrays4": "Create a `new int[original.length + 1]`. Copy elements over in a loop, then set the last element.",
+      "Arrays5": "Use `Arrays.sort(array1)` and `Arrays.sort(array2)`, then return `Arrays.equals(array1, array2)`.",
+      "Arrays6": "To reverse, loop halfway through the array: `for(int i = 0; i < len / 2; i++)` and swap `arr[i]` with `arr[len - 1 - i]`."
+    }
   },
   "009-methods": {
     "slug": "methods",
