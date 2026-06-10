@@ -38,7 +38,11 @@
     "slug": "type-casting",
     "title": "Type Casting",
     "difficulty": "easy",
-    "hints": {}
+    "hints": {
+      "TypeCasting1": "For explicit casting from double to int, put `(int)` before the variable. For division, put `(double)` before one of the integers.",
+      "TypeCasting2": "Use `if (item instanceof Weapon)` to check the type. Inside the if block, cast it like `Weapon w = (Weapon) item;`.",
+      "TypeCasting3": "To avoid overflow when adding two `Integer`s, cast them to `long` before adding: `(long) a + (long) b`, then let auto-boxing wrap it into a `Long`. For `downcastId`, just use `(int)`."
+    }
   },
   "005-strings": {
     "slug": "strings",
