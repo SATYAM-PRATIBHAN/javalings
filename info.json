@@ -48,7 +48,11 @@
     "slug": "strings",
     "title": "Strings",
     "difficulty": "easy",
-    "hints": {}
+    "hints": {
+      "Strings1": "Use `.equals()` for string comparison, not `==`. Use `.trim().toLowerCase()` to standardize the username.",
+      "Strings2": "Use `logLine.indexOf(\":\")` to find the colon, then `logLine.substring(0, colonIndex)`. Do the same to find `[` and `]`.",
+      "Strings3": "For formatting, use `String.format(\"Receipt #%03d | Total: $%.2f\", receiptNumber, total)`. For reversing, use `new StringBuilder(text).reverse().toString()`."
+    }
   },
   "006-conditionals": {
     "slug": "conditionals",
