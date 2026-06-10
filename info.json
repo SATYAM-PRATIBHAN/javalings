@@ -90,7 +90,11 @@
     "slug": "methods",
     "title": "Methods",
     "difficulty": "easy",
-    "hints": {}
+    "hints": {
+      "Methods1": "Write the full method signature, like `public static double calculateDiscount(double price, double discountPercent)`.",
+      "Methods2": "Change `void levelUpScore` to `int levelUpScore` and return the new score. For doubleLevelUpScore, just return `levelUpScore(score) * 2`.",
+      "Methods3": "Use `int... numbers` for varargs. Inside the method, treat `numbers` exactly like an array. For `printReport`, call `sumAll(numbers)`."
+    }
   },
   "010-method-overloading": {
     "slug": "method-overloading",
