@@ -26,7 +26,13 @@
     "slug": "operators",
     "title": "Operators",
     "difficulty": "easy",
-    "hints": {}
+    "hints": {
+      "Operators1": "Calculate the item total `basePrice * quantity`. Then compute tax: `(total * taxRate) / 100`. Add them together.",
+      "Operators2": "Combine comparisons using `||` for OR and `&&` for AND.",
+      "Operators3": "Use `level++` to increment. Use `health -= damage` to decrease. Use `score *= multiplier` to multiply.",
+      "Operators4": "To grant: `current | new`. To check: `(current & specific) == specific`. To revoke: `current & ~revoke`.",
+      "Operators5": "The ternary operator is written like `condition ? ifTrue : ifFalse`. Use `()` to group the addition so it evaluates before the multiplication."
+    }
   },
   "004-type-casting": {
     "slug": "type-casting",
