@@ -58,7 +58,10 @@
     "slug": "conditionals",
     "title": "Conditionals",
     "difficulty": "easy",
-    "hints": {}
+    "hints": {
+      "Conditionals1": "Use `if (year % 4 == 0)` combined with `&&` and `||` for leap years. Use nested `if`/`else if` and `.equals()` for shipping logic.",
+      "Conditionals2": "Use `switch(month)` with `case 2:` for February. For modern switches, use `return switch (color) { case \"Red\" -> \"Stop\"; ... default -> \"Invalid Color\"; };`."
+    }
   },
   "007-loops": {
     "slug": "loops",
