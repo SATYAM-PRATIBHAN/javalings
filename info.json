@@ -100,7 +100,10 @@
     "slug": "method-overloading",
     "title": "Method Overloading",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Overloading1": "Since the method signatures are provided, you just need to replace the `return 0;` with the actual math formulas: `side * side`, `length * width`, and `Math.PI * radius * radius`.",
+      "Overloading2": "For the `process` methods you write from scratch, make sure they are `public static`. For the double process method, `Math.round(number)` returns a `long`, so your method should return a `long`."
+    }
   },
   "011-classes": {
     "slug": "classes",
