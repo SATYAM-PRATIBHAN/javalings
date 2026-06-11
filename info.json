@@ -109,7 +109,10 @@
     "slug": "classes",
     "title": "Classes",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Classes1": "Use `this.accountNumber = accountNumber` to distinguish between the instance variable and the parameter.",
+      "Classes2": "Use `totalBooksInSystem += count` for the static variable, but `this.bookCount += count` for the instance variable. In transferBooks, subtract from `this.bookCount` and add to `otherLibrary.bookCount`."
+    }
   },
   "012-objects": {
     "slug": "objects",
