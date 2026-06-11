@@ -166,25 +166,35 @@
     "slug": "inheritance",
     "title": "Inheritance",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Inheritance1": "Use `extends Animal`. In the constructor, call `super(name);` as the first line.",
+      "Inheritance2": "Use `extends Employee`. In your override method, you can call the parent's logic with `super.calculateBonus()`."
+    }
   },
   "019-polymorphism": {
     "slug": "polymorphism",
     "title": "Polymorphism",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Polymorphism1": "In `getAnimalSound`, you don't need to know if the animal is a Dog or Cat! Just return `animal.sound()` and polymorphism handles the rest."
+    }
   },
   "020-abstract-classes": {
     "slug": "abstract-classes",
     "title": "Abstract Classes",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "AbstractClasses1": "Add `abstract` before `class Shape` and `double getArea()`. Make sure `getArea` has a semicolon instead of curly braces `{}`."
+    }
   },
   "021-interfaces": {
     "slug": "interfaces",
     "title": "Interfaces",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Interfaces1": "Use `implements Playable`. Interfaces only declare method signatures without bodies (unless default).",
+      "Interfaces2": "Use `implements Movable, Chargeable`. Add `default` before your method return type to give it a body in the interface!"
+    }
   },
   "022-exceptions": {
     "slug": "exceptions",
