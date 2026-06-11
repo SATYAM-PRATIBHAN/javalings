@@ -118,37 +118,49 @@
     "slug": "objects",
     "title": "Objects",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Objects1": "Create the car with `Car car = new Car();`, call methods with `car.startEngine();` and `car.drive(50);`."
+    }
   },
   "013-constructors": {
     "slug": "constructors",
     "title": "Constructors",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Constructors1": "Use `this.username = username` to set values in the 2-arg constructor. Use `this(username, 1)` to chain to the 2-arg constructor from the 1-arg constructor."
+    }
   },
   "014-encapsulation": {
     "slug": "encapsulation",
     "title": "Encapsulation",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Encapsulation1": "Use the `private` keyword. In `setCelsius`, write `if (celsius >= -273.15) { this.celsius = celsius; }`."
+    }
   },
   "015-access-modifiers": {
     "slug": "access-modifiers",
     "title": "Access Modifiers",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "AccessModifiers1": "Use `private String adminPassword` and `protected int connectionTimeout`."
+    }
   },
   "016-static": {
     "slug": "static",
     "title": "Static",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Static1": "Add the `static` keyword before `int totalRequests`. In the static methods, simply reference `totalRequests`."
+    }
   },
   "017-final": {
     "slug": "final",
     "title": "Final",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Final1": "Use `public final class Final1`, `public static final int MAX_RETRIES = 5;`, and `public final void execute()`."
+    }
   },
   "018-inheritance": {
     "slug": "inheritance",
