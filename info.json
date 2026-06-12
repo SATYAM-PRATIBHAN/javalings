@@ -271,6 +271,9 @@
     "slug": "file-handling",
     "title": "File Handling",
     "difficulty": "hard",
-    "hints": {}
+    "hints": {
+      "FileHandling1": "Add `throws IOException` to the method signature. Then use `Files.writeString(path, content);` and `Files.readString(path);`",
+      "FileHandling2": "For countLines, use `return Files.lines(path).count();`. For copyFile, use `Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);`"
+    }
   }
 }
