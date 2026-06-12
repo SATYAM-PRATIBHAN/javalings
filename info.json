@@ -229,13 +229,19 @@
     "slug": "lambdas",
     "title": "Lambdas",
     "difficulty": "hard",
-    "hints": {}
+    "hints": {
+      "Lambdas1": "Return a lambda directly: `return (n) -> n % 2 == 0;` and `return (s) -> s.length();`",
+      "Lambdas2": "Define `int operate(int a, int b);`. Then return lambdas like `return (a, b) -> a + b;`"
+    }
   },
   "026-streams": {
     "slug": "streams",
     "title": "Streams",
     "difficulty": "hard",
-    "hints": {}
+    "hints": {
+      "Streams1": "Chain it together! `return numbers.stream().filter(n -> n % 2 == 0).map(n -> n * n).collect(Collectors.toList());`",
+      "Streams2": "Use `words.stream().mapToInt(String::length).sum();` and `words.stream().collect(Collectors.groupingBy(String::length));`"
+    }
   },
   "027-optional": {
     "slug": "optional",
