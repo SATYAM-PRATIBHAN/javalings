@@ -1,6 +1,31 @@
 # Javalings 🚧 Work in Progress
 
-This project is currently under construction. I'll add the proper documentation once it's completed!
+## Getting Started
+
+### Installation
+You can install the Javalings CLI globally using our install script. This requires Java and Maven to be installed on your system.
+
+```bash
+# 1. Run the installation script
+curl -sL https://raw.githubusercontent.com/SATYAM-PRATIBHAN/javalings/main/install.sh | bash
+
+# 2. Add the bin folder to your PATH (if not already done)
+# For bash:
+echo 'export PATH="$HOME/.javalings/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+# For zsh:
+echo 'export PATH="$HOME/.javalings/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+# 3. Initialize the javalings project in your desired directory
+javalings init
+
+# 4. Move into the directory
+cd javalings
+
+# 5. Start learning!
+javalings
+```
 
 In the meantime, enjoy watching **Conway's Game of Life**. It's a mesmerizing "zero-player game" where cells evolve automatically based on a set of simple rules:
 
