@@ -218,7 +218,12 @@
     "slug": "collections",
     "title": "Collections",
     "difficulty": "hard",
-    "hints": {}
+    "hints": {
+      "Collections1": "Use `List<String> list = new ArrayList<>();` and `list.add(\"...\");`. To remove, use `list.remove(1);`.",
+      "Collections2": "Use `new HashSet<>(numbers);` to instantly convert a List to a Set and remove duplicates. Use `set.contains(target);` for checking.",
+      "Collections3": "Use `inventory.put(item, inventory.getOrDefault(item, 0) + amountToAdd);` to handle both existing and new items cleanly.",
+      "Collections4": "Simply call `Collections.sort(list);` and `Collections.reverse(list);` respectively before returning the list."
+    }
   },
   "025-lambdas": {
     "slug": "lambdas",
