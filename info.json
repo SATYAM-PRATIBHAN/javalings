@@ -200,13 +200,19 @@
     "slug": "exceptions",
     "title": "Exceptions",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Exceptions1": "Use `try { return Integer.parseInt(input); } catch (NumberFormatException e) { return defaultValue; }`",
+      "Exceptions2": "Make sure to declare `public double withdraw(double amount) throws InsufficientFundsException` and use `throw new InsufficientFundsException(\"Message\");`"
+    }
   },
   "023-generics": {
     "slug": "generics",
     "title": "Generics",
     "difficulty": "hard",
-    "hints": {}
+    "hints": {
+      "Generics1": "Define the class as `static class Box<T>`. Inside, use `private T item;`.",
+      "Generics2": "Use `public static <T extends Comparable<T>> T getMax(T a, T b)` and compare using `a.compareTo(b) > 0`."
+    }
   },
   "024-collections": {
     "slug": "collections",
