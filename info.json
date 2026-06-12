@@ -247,19 +247,25 @@
     "slug": "optional",
     "title": "Optional",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Optional1": "Use `return Optional.ofNullable(value);` to safely wrap the String. Then use `return opt.orElse(defaultValue);`"
+    }
   },
   "028-enums": {
     "slug": "enums",
     "title": "Enums",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Enums1": "List the options as `RED, YELLOW, GREEN;`. For the switch, use `case RED: return TrafficLight.GREEN;` etc."
+    }
   },
   "029-packages": {
     "slug": "packages",
     "title": "Packages",
     "difficulty": "medium",
-    "hints": {}
+    "hints": {
+      "Packages1": "Add `import java.util.Scanner;` at the very top. Then write `Scanner scanner = new Scanner(System.in);`"
+    }
   },
   "030-file-handling": {
     "slug": "file-handling",
