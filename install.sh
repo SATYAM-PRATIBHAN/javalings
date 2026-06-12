@@ -28,10 +28,21 @@ mkdir -p ~/.javalings/bin
 echo "Copying to ~/.javalings/javalings.jar..."
 cp $JAR_PATH ~/.javalings/javalings.jar
 
+echo "Detecting Java runtime used by Maven..."
+MAVEN_JAVA_HOME=$(mvn -v | grep 'runtime:' | awk '{print $NF}')
+JAVA_EXEC="java"
+
+if [ -n "$MAVEN_JAVA_HOME" ] && [ -x "$MAVEN_JAVA_HOME/bin/java" ]; then
+    JAVA_EXEC="$MAVEN_JAVA_HOME/bin/java"
+    echo "Found Java at $JAVA_EXEC"
+else
+    echo "Using default 'java' command"
+fi
+
 echo "Creating 'javalings' wrapper script..."
-cat << 'EOF' > ~/.javalings/bin/javalings
+cat << EOF > ~/.javalings/bin/javalings
 #!/usr/bin/env bash
-java -jar ~/.javalings/javalings.jar "$@"
+"$JAVA_EXEC" -jar ~/.javalings/javalings.jar "\$@"
 EOF
 
 chmod +x ~/.javalings/bin/javalings
